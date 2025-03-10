@@ -1,0 +1,12 @@
+services:
+  sos-api:
+    container_name: sos-api
+    build:
+      dockerfile: ./build/Dockerfile
+      context: ..
+    ports:
+      - "8080:8080"
+
+volumes:
+  prometheus_data:
+  grafana_data:
